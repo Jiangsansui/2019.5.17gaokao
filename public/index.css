@@ -1,0 +1,61 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+#navheader .el-menu-item.is-active{
+    border-bottom: none;
+    box-shadow: 0px 10px 20px -10px rgb(61, 170, 121);
+}
+.el-main.pagemain{
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    padding: 12px;
+}
+.codebox{
+    width: 100%;
+    position: relative;
+    padding: 0;
+    overflow: visible;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    text-indent: 0;
+    box-sizing: border-box;
+    /* margin: 5px; */
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    flex-flow: column;
+}
+.codehead{
+    user-select: none;font-weight: bold;
+    padding: 10px 12px;
+    color: #595959;
+    border-bottom: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    background: #fff;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+}
+::-webkit-scrollbar {
+    width: 10px;height: 10px;
+    transition: background-color .2s cubic-bezier(.645,.045,.355,1);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,0);
+}
+div:hover::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.05);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color:none;
+}
+textarea:disabled{
+    background-color: #f5f7fa;
+    border-color: #e4e7ed;
+    color: #c0c4cc;
+    cursor: not-allowed;
+}
